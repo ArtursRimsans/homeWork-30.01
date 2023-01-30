@@ -1,0 +1,38 @@
+.nav {
+  height: 90px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-image: url(/style/img/pictures/WallpaperDog.jpg);
+  background-size: 16%;
+  background-repeat: repeat;
+
+  &__left {
+    display: contents;
+    .nav__itemLogo {
+      width: 90px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    .nav__item {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      padding: 3px 9px;
+      transition: color 5.34s ease, border-color 0.34s ease;
+      color: bisque;
+      border: 1px solid rgba(238, 7, 7, 0.705);
+      border-top-right-radius: 5px;
+      background-color: rgb(26, 24, 24);
+      border-bottom-left-radius: 5px;
+      &:hover {
+        color: rgba(238, 7, 7, 0.705);
+        border-color: bisque;
+      }
+    }
+  }
+}

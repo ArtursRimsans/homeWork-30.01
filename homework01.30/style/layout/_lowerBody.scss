@@ -1,0 +1,13 @@
+.lowerBody {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 50px;
+  padding-left: 240px;
+  .boxCard {
+    height: 300px;
+    width: 300px;
+
+    background-color: aqua;
+    border: 2px solid black;
+  }
+}
